@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+        <ImageView
+            android:id="@+id/sportsImageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/titleDetail"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sportsImageDetail"
+            android:padding="16dp"
+            android:text="@string/title_placeholder"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:id="@+id/newsTitleDetail"
+            style="SportsDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sportsImageDetail"
+            android:padding="16dp"
+            android:text="@string/news_placeholder"
+            android:textColor="?android:textColorSecondary" />
+
+        <TextView
+            android:id="@+id/subTitleDetail"
+            style="SportsDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsTitleDetail"
+            android:padding="16dp"
+            android:text="@string/lorem_ipsum_es_simplemente_el_texto_de_relleno_de_las_imprentas_y_archivos_de_texto_lorem_ipsum_ha_sido_el_texto_de_relleno_est_ndar_de_las_industrias_desde_el_a_o_1500_cuando_un_impresor_n_del_t_persona_que_se_dedica_a_la_imprenta_desconocido_us_una_galer_a_de_textos_y_los_mezcl_de_tal_manera_que_logr_hacer_un_libro_de_textos_especimen_no_s_lo_sobrevivi_500_a_os_sino_que_tambien_ingres_como_texto_de_relleno_en_documentos_electr_nicos_quedando_esencialmente_igual_al_original_fue_popularizado_en_los_60s_con_la_creaci_n_de_las_hojas" />
+
+    </RelativeLayout>
+</ScrollView>
